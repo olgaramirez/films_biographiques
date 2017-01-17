@@ -1,0 +1,651 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Accueil</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+ 		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet" type="text/css">
+        
+        <!--<link rel="stylesheet" href="css/normalize.min.css">-->
+       
+        
+        <link rel="stylesheet" href="themes/int_mob.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
+        <script src="js/vendor/jquery.mobile-1.4.5"></script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+       <!----------Popups------------>
+      
+      
+  <div data-role="popup" class="myPopup panierMessage" >
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right" data-transition="pop">Close</a>
+     
+      	<h3>Connectez-vous</h3>
+   </div>
+   
+   
+   <div data-role="popup" class="myPopup loginMes1" >
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right" data-transition="pop">Close</a>
+     
+      	<h3>La courriel n'est pas correcte</h3>
+   </div>
+      
+      
+      
+       <div data-role="popup" class="myPopup loginMes2" >
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right" data-transition="pop">Close</a>
+     
+      	<h3>Le mot de passe n'est pas correct</h3>
+   </div>
+      
+     <div data-role="popup" class="myPopup loginMes3" >
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right" data-transition="pop">Close</a>
+     
+      	<h3>La courriel et le mot de passe ne sont pas corrects</h3>
+   </div>
+       
+      
+      
+       <!----------/Popups------------> 
+
+        <script src="ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+
+       
+       
+       
+       <!--Accueil-->
+      
+       
+           <div data-role="page" id="homePage">
+               <div data-role="header">
+               		<a href="#galerie" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-grid">Galerie</a>
+                    
+               		<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-shop clickGoToCart" href="#panier" >Panier</a>
+                    
+                    <h1>Films biographiques </h1>
+                    
+                    
+               </div> <!--en-tête-->
+               
+              
+             <div data-role="content">
+             
+             
+             	<div class="ac"><img src="img/photo-camera_n-b.jpg" width="320" height="213" alt="Appareil de photographie"/></div>
+                <ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder>
+                    <li><a href="#film1" data-transition="slidefade">Alexandre le Grand, le Macédonien</a></li>
+                    <li><a href="#film2" data-transition="slidefade">Gengis Khan Le dernier secret</a></li>
+                    <li><a href="#film3" data-transition="slidefade">Jules César ou la gloire de Rome</a></li>
+                    <li><a href="#film4" data-transition="slidefade">Napoléon</a></li>
+                    <li><a href="#film5" data-transition="slidefade">Hitler : La Naissance du mal</a></li>
+                
+                </ul>
+             </div>  <!--/contenu-->
+             
+             <div data-role="footer">
+             <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-user" href="#member">Se connecter</a>
+             	
+             </div>
+               
+           </div>
+        <!--/Accueil-->
+        
+         <!--Galerie-->
+           <div data-role="page" id="galerie">
+                 <div data-role="header">
+               		<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home" href="#homePage" data-transition="slidefade">Accueil</a>
+                    
+               		<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-shop clickGoToCart" href="#panier">Panier</a>
+                    <h1>Films biographiques </h1>
+                    
+                    
+               </div> <!--en-tête-->
+               
+                 
+                 <div data-role="main" class="ui-content">
+                 
+                     <div class="gl_wr">
+                        <div class="gl">
+                            <a href="#film1" data-transition="slidefade"><img src="img/Alexander_200.jpg" width="200" height="304" alt="Alexandre le Grand"/></a>
+                        </div>
+                        <h3>Alexandre le Grand</h3>
+                      </div>
+                      
+                     <div class="gl_wr">
+                        <div class="gl">
+                            <a href="#film2" data-transition="slidefade"><img src="img/Chingishan_200.jpg" width="200" height="311" alt="Gengis Khan"/></a>
+                        </div>
+                        <h3>Gengis Khan</h3>
+                     </div>
+                    
+                    <div class="gl_wr">
+                        <div class="gl">
+                            <a href="#film3" data-transition="slidefade"><img src="img/Caesar_200.jpg" width="200" height="254" alt="Jules César"/></a>
+                        </div>
+                        <h3>Jules César</h3>
+                    </div>
+                    
+                    <div class="gl_wr">
+                        <div class="gl">
+                            <a href="#film4" data-transition="slidefade"><img src="img/napoleon_200.jpg" width="200" height="200" alt="Napoléon"/></a>
+                        </div>
+                        <h3>Napoléon</h3>
+                    </div>
+                    
+                    <div class="gl_wr">
+                        <div class="gl">
+                            <a href="#film5" data-transition="slidefade"><img src="img/Adolf_Hitler_200.jpg" width="200" height="267" alt="Hitler"/></a>
+                        </div>
+                        <h3>Hitler</h3>
+                    </div>
+                    
+                 	
+                 </div>
+           
+                <div data-role="footer">
+                 <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-user" href="#member">Se connecter</a>
+                    
+                 </div>
+           </div>
+       <!--/Galerie-->
+       
+       
+       <!--Film 1-->
+           <div data-role="page" id="film1">
+                 <div data-role="header">
+               		<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home" href="#homePage" data-transition="slidefade">Accueil</a>
+                    
+               		<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-shop clickGoToCart" href="#panier">Panier</a>
+                    <h1>Films biographiques </h1>
+                    
+                    
+           </div> <!--en-tête-->
+               
+                 
+                 <div data-role="main" class="ui-content">
+                 <h3 class="ttr_pg">Alexandre le Grand, le Macédonien</h3>
+                 
+               <div class="wr">
+                 <div class="s_pht">
+                 	<div class="gl"><img src="img/Alexander_200.jpg" width="200" height="304" alt="Alexandre le Grand"/></div>
+                    <h4 class="pr"><span class="pr_ttr">Prix :</span> CDN$ 14.99 </h4>
+                    <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-shop"  href="#javascript:;" id="fm1">Ajouter au panier</a>
+                   </div>
+                    
+                    <div class="dsc">
+                    	<h4><span class="ttr">Genre :</span> Documentaire</h4>
+                        <h4><span class="ttr">Anneés :</span> 2011</h4>
+                        <h4><span class="ttr">Pays : </span>France, Allemagne, Grèce</h4>
+                        <h4><span class="ttr">Langues :</span> français</h4>
+                        <h4><span class="ttr">Réalisé :</span> Bernard George</h4>
+                        <h4><span class="ttr">Durée :</span> 52 min</h4>
+                    </div>
+                    </div>  
+                    
+                    <div data-role="collapsible">
+                      <h1>Détails</h1>
+                      <p>Le personnage d'Alexandre III de Macédoine, devenu Alexandre le Grand, relève autant de l'Histoire que de la légende. Sa jeunesse et son destin extraordinaire l'ont auréolé d'une gloire sans pareille. Pourtant que sait-on vraiment de ce personnage ? Alexandre le Grand, de la Macédoine à l’Inde…</p>
+                    </div>
+                 </div>
+           
+                <div data-role="footer">
+                
+                  <a href="#" data-rel="back" data-icon="back" ui-btn-icon-right>Retoure</a> 
+                  <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user" href="#member">Se connecter</a>
+                 </div>
+           </div>
+       <!--/Film 1-->
+       
+        <!--Film 2-->
+           <div data-role="page" id="film2">
+                 <div data-role="header">
+               		<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home" href="#homePage" data-transition="slidefade">Accueil</a>
+                    
+               		<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-shop clickGoToCart" href="#panier">Panier</a>
+                    <h1>Films biographiques </h1>
+                    
+                    
+               </div> <!--en-tête-->
+                 
+                 <div data-role="main" class="ui-content">
+                 <h3 class="ttr_pg">Gengis Khan Le dernier secret</h3>
+                 
+                <div class="wr">
+                 <div class="s_pht">
+                     <div class="gl"> <img src="img/Chingishan_200.jpg" width="200" height="311" alt="Gengis Khan"/></div>
+                     <h4 class="pr"><span class="pr_ttr">Prix :</span> CDN$ 17.99 </h4>
+                     <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-shop"  href="#javascript:;" id="fm2">Ajouter au panier</a>
+                 </div>
+                 
+                    <div class="dsc">
+                            <h4><span class="ttr">Genre :</span> Documentaire</h4>
+                            <h4><span class="ttr">Anneés :</span> 2008</h4>
+                            <h4><span class="ttr">Pays : </span>Etats-Unis d'Amérique</h4>
+                            <h4><span class="ttr">Langues :</span> français</h4>
+                            <h4><span class="ttr">Réalisé :</span> Michael O'BRIEN</h4>
+                            <h4><span class="ttr">Durée :</span> 94 min</h4>
+                     </div>
+                 </div>
+                        
+                    <div data-role="collapsible">
+                      <h1>Détails</h1>
+                      <p>Gengis Khan fut le plus grand conquérant de son époque. Ses pillages sont célèbres et les richesses rapportées en Mongolie constituent un trésor défiant l'imagination. A sa mort en 1227, on ne trouve nulle trace de ce trésor. L'emplacement de sa tombe demeure un mystère. à l'aide des dernières découvertes scientifiques, nous partons aujourd'hui pour les steppes mongoles, demeurées inchangées depuis le Moyen Âge. Sur la piste de la tombe et du trésor de Gengis Khan, mes chercheurs vont tenter de percer le dernier secret de l'empereur universel. Inclus: un livret de 24 pages, retraçant la biographie de Gengis Khan, une carte de l'empire Mongol ainsi que de nombreux articles décrivant la Mongolie d'hier et d'aujourd'hui.</p>
+                    </div>
+                 </div>
+           
+                 <div data-role="footer">
+                    <a href="#" data-rel="back" data-icon="back" ui-btn-icon-right>Retoure</a> 
+                    <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user" href="#member">Se connecter</a>
+                 </div>
+           </div>
+       <!--/Film 2-->
+        
+        <!--Film 3-->
+          <div data-role="page" id="film3">
+                 <div data-role="header">
+               		<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home" href="#homePage" data-transition="slidefade">Accueil</a>
+                    
+               		<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-shop clickGoToCart" href="#panier">Panier</a>
+                    <h1>Films biographiques </h1>
+                    
+                    
+               </div> <!--en-tête-->
+                 
+                 <div data-role="main" class="ui-content">
+                 <h3 class="ttr_pg">Jules César ou la gloire de Rome</h3>
+                 
+                 <div class="wr">
+                 	<div class="s_pht">
+                     <div class="gl"> <img src="img/Caesar_200.jpg" width="200" height="254" alt="Jules César"/></div>
+                     <h4 class="pr"><span class="pr_ttr">Prix :</span> CDN$ 9.99 </h4>
+                     <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-shop"  href="#javascript:;" id="fm3">Ajouter au panier</a>
+                 </div>
+                 
+                     <div class="dsc"> 
+                            <h4><span class="ttr">Genre :</span> Documentaire</h4>
+                            <h4><span class="ttr">Anneés :</span> 2014</h4>
+                            <h4><span class="ttr">Pays : </span>France</h4>
+                            <h4><span class="ttr">Langues :</span> français</h4>
+                            <h4><span class="ttr">Réalisé :</span> Roland Portiche</h4>
+                            <h4><span class="ttr">Durée :</span> 105 min</h4>
+                      </div>
+                    </div>
+                        
+                    <div data-role="collapsible">
+                      <h1>Détails</h1>
+                      <p>C’est l’un des personnages les plus célèbres de l’histoire universelle, mais aussi l’un des plus mal connus. Quelle est vraiment l’ambition de Jules César ? Pourquoi a-t-il conquis la Gaule ? Voulait-il être roi ? Qui sont les conjurés qui l’ont percé de 23 coups de couteau ?
+
+Dans ce nouveau numéro inédit et exceptionnel de Secrets d’Histoire, Stéphane Bern nous emmène sur les lieux mêmes où s’est déroulée la grande épopée de César. Avec lui, nous plongerons dans les fastes et les intrigues de la Rome antique, nous assisterons à des banquets et à des combats de gladiateurs, nous irons à Bibracte, en Bourgogne, à la rencontre des Gaulois d’avant la conquête. Avant d’être une page d’histoire, apprise par tous les écoliers de France, la guerre des Gaules fut une effroyable boucherie, faisant plus d’un million de victimes.
+
+Comment, à Alésia, César a-t-il vaincu une immense armée de 250 000 Gaulois ? Pourquoi le franchissement d’un simple cours d’eau, le Rubicon, a-t-il déclenché une terrible guerre civile entre les légions de César et celles de Pompée ? César poursuit Pompée jusqu’en Égypte, où il fait la connaissance de la reine Cléopâtre. Et si l’idée même de l’Empire Romain était née, sur les bords du Nil, de la rencontre amoureuse du général romain et de la reine d’Égypte ?</p>
+                    </div>
+                 </div>
+                 
+                 <div data-role="footer">
+                     <a href="#" data-rel="back" data-icon="back" ui-btn-icon-right>Retoure</a> 
+                     <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user" href="#member">Se connecter</a>
+                 </div>
+           </div>
+       <!--/Film 3-->
+       
+        <!--Film 4-->
+           <div data-role="page" id="film4">
+                 <div data-role="header">
+               		<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home" href="#homePage" data-transition="slidefade">Accueil</a>
+                    
+               		<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-shop clickGoToCart" href="#panier">Panier</a>
+                    <h1>Films biographiques </h1>
+                    
+                    
+               </div> <!--en-tête-->
+                 
+                 <div data-role="main" class="ui-content">
+                 <h3 class="ttr_pg">Napoléon</h3>
+                 
+                 <div class="wr">
+                     <div class="s_pht">
+                        <div class="gl"> <img src="img/napoleon_300.jpg" width="200" height="200" alt="Napoléon"/></div>
+                        <h4 class="pr"><span class="pr_ttr">Prix :</span> CDN$ <span class="prix">29.99 </span></h4>
+                        <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-shop"  href="#javascript:;" id="fm4">Ajouter au panier</a>
+                    </div>
+                
+                    <div class="dsc">
+                    		
+                            <h4><span class="ttr">Genre : </span>Mini-série historique</h4>
+                            <h4><span class="ttr">Anneés :</span> 2002</h4>
+                            <h4><span class="ttr">Pays : </span>France, Canada</h4>
+                            <h4><span class="ttr">Langues :</span> français</h4>
+                            <h4><span class="ttr">Réalisé :</span>  Yves Simoneau</h4>
+                            <h4><span class="ttr">Durée :</span> 360 min</h4>
+                     </div>
+                   </div>
+                    
+                    <div data-role="collapsible">
+                      <h1>Détails</h1>
+                      <p>Le film expose la vie de Napoléon de 1769 à 1821. L'épopée de Napoléon Bonaparte racontée par M. de Talleyrand à ses amis ; sa naissance en Corse, ses études à l'école militaire de Brienne, ses fiançailles à Toulon, son arrivée à Paris, sa rencontre avec Joséphine de Beauharnais. Arcole, la campagne d'Égypte, le 18 brumaire, Bonaparte devient premier consul, puis Napoléon Ier empereur. Ses victoires, la campagne de Russie, l'abdication, l'île d'Elbe, Waterloo, Sainte-Hélène...</p>
+                    </div>
+                 </div>
+                 
+                 <div data-role="footer">
+                     <a href="#" data-rel="back" data-icon="back" ui-btn-icon-right>Retoure</a> 
+                     <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user" href="#member">Se connecter</a>
+                 </div>
+           
+           </div>
+       <!--/Film 4-->
+       
+        <!--Film 5-->
+           <div data-role="page" id="film5">
+                 <div data-role="header">
+               	<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home" href="#homePage" data-transition="slidefade">Accueil</a>
+                    
+               		<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-shop clickGoToCart" href="#panier">Panier</a>
+                    <h1>Films biographiques </h1>
+                    
+                    
+               </div> <!--en-tête-->
+                 
+                 <div data-role="main" class="ui-content">
+                 
+                     <h3 class="ttr_pg">Hitler : La Naissance du mal</h3>
+                     
+                   <div class="wr">
+                     <div class="s_pht">
+                         <div class="gl"> <img src="img/Adolf_Hitler_200.jpg" width="200" height="267" alt="Adolf Hitler"/></div>
+                         <h4 class="pr"><span class="pr_ttr">Prix :</span> CDN$ 24.99 </h4>  
+                         <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-shop"  href="#javascript:;" id="fm5">Ajouter au panier</a>
+                         
+                 	</div>
+                    
+                        <div class="dsc">
+                        		
+                                <h4><span class="ttr">Genre : </span>Biographie, histoire, drame</h4>
+                                <h4><span class="ttr">Anneés :</span> 2003</h4>
+                                <h4><span class="ttr">Pays : </span>Canada, États-Unis</h4>
+                                <h4><span class="ttr">Langues :</span> français</h4>
+                                <h4><span class="ttr">Réalisé :</span>  Christian Duguay</h4>
+                                <h4><span class="ttr">Durée :</span> 185 min</h4>
+                         </div>
+                       </div>  
+                         
+                    <div data-role="collapsible">
+                      <h1>Détails</h1>
+                      <p>Durant son enfance, Adolf Hitler semble nager dans l'incompréhension de ses proches. Ce sentiment le poursuivra même jusqu'au rejet de sa candidature à l'école des beaux-arts de Vienne. Désœuvré, il accueille la déclaration de guerre avec enthousiasme et se hisse jusqu'au grade de caporal. Victime d'une attaque au gaz, il est hospitalisé jusqu'à la fin de la guerre puis démobilisé. C'est dès la fin du conflit qu'il commence à s'investir dans le monde de la politique. Et également à se faire connaitre en Allemagne, grâce à son parti : le Parti national-socialiste des travailleurs allemands.</p>
+                    </div>
+                 </div>
+                 
+                 <div data-role="footer">
+           			 <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user" href="#member">Se connecter</a>
+                     <a data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-back">Retoure</a> 
+                 </div>
+                 
+           </div>
+       <!--/Film 5-->
+       
+       
+        <!--Membre-->
+           <div data-role="page" id="member">
+           		<div data-role="header">
+                    	<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home" href="#homePage" data-transition="slidefade">Accueil</a>
+                        <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-right ui-icon-shop clickGoToCart" href="#panier">Panier</a>
+                    <h1>Membre </h1>      
+                   
+                 </div> <!--en-tête-->
+                 
+                 <div data-role="main" class="ui-content">
+                 
+                 <div class="main">
+                    <form class="form" method="post" action="#">
+                        <h2>Entrez vos courriel et mot de pass</h2>
+                        
+                        <label><i class="fa fa-envelope-o" aria-hidden="true"></i>
+Courriel :</label>
+                        <input type="email" name="email" id="email" placeholder="Courriel" data-icon="mail">
+                        
+                        <label><i class="fa fa-lock" aria-hidden="true"></i>
+ Mot de pass :</label>
+                        <input type="password" name="motdepasse" id="motdepasse" placeholder="Mot de pass">
+                        
+                        <input  id="submit" name="submit" type="submit" value="Se connecter" data-icon="check" data-iconpos="right">
+                    </form>
+                    </div>
+                 
+                 
+                 
+                 </div>
+                 
+                 <div data-role="footer">
+                     <a href="#" data-rel="back" data-icon="back" class="ui-btn-icon-right">Retoure</a> 
+                 </div>
+           
+           </div>
+       <!--/Membre-->
+       
+       <!--Panier-->
+           <div data-role="page" id="panier">
+           		<div data-role="header">
+                    	<a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home" href="#homePage" data-transition="slidefade">Accueil</a>
+                    <h1>Panier </h1>      
+                   
+                 </div> <!--en-tête-->
+                 
+                 <div data-role="main" class="ui-content">
+                 <div class="pnr"></div>
+                 <table data-role="table" class="ui-responsive">
+      <thead>
+        <tr>
+          <th>Titre</th>
+          <th>Prix, CND</th>
+          <th>Quantité</th>
+          <th>Prix Total, CND</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+                       
+</div>
+                 
+                 <div data-role="footer">
+                     <a href="#" data-rel="back" data-icon="back" class="ui-btn-icon-right">Retoure</a> 
+                     <a class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user" href="#member">Se connecter</a>
+                 </div>
+           
+           </div>
+       <!--/Panier-->
+       
+       
+       
+      
+       
+       
+       <script>
+	   
+	   
+	   
+	   
+	   $(document).ready(function() {
+		   
+	  var total_items = 0;
+	   var total_price = 0;
+	   var nap_items = 0;
+	   var nap_price = 0;
+	   var ht_items = 0;
+	   var ht_price = 0;
+	   var jc_items = 0;
+	   var jc_price = 0;
+	   var gk_items = 0;
+	   var gk_price = 0;
+	   var ag_items = 0;
+	   var ag_price = 0;
+	   
+	   
+	   
+		   $(".pnr").html("<p>Vous avez choisit " + total_items+ " prodiuts</p>");
+		   $(".pnr").append("<p>Votre grand total est " +total_price + " dollars</p>");
+		   
+		   
+		    $("#fm1").click(function(){
+			   
+			   total_items++;
+			   total_price = total_price +  14.99 ;
+			   ag_items++;
+			   ag_price = ag_price + 14.99;
+			  
+			$(".pnr").html("<p>Vous avez choisit " + total_items+ " prodiuts</p>");
+		   	$(".pnr").append("<p>Votre grand total est " +total_price + " dollars</p>");
+			
+				if(ag_items==1){
+			  			 $("tbody").append("<tr> <td>Alexandre le Grand, Le Macédonien</td> <td>14.99</td><td class='ag_i'>" + ag_items+ "</td> <td class='ag_p'>" + ag_price + " </td> </tr> ");
+							
+		   		} else {
+					$(".ag_i").html(ag_items);
+					$(".ag_p").html(ag_price);
+				}
+			});
+		   
+		   
+		   $("#fm2").click(function(){
+			   
+			   total_items++;
+			   total_price = total_price +  17.99 ;
+			   gk_items++;
+			   gk_price = gk_price + 17.99;
+			  
+			$(".pnr").html("<p>Vous avez choisit " + total_items+ " prodiuts</p>");
+		   	$(".pnr").append("<p>Votre grand total est " +total_price + " dollars</p>");
+			
+				if(gk_items==1){
+			  			 $("tbody").append("<tr> <td>Gengis Khan Le dernier secter</td> <td>17.99</td><td class='gk_i'>" + gk_items+ "</td> <td class='gk_p'>" + gk_price + " </td> </tr> ");
+							
+		   		} else {
+					$(".gk_i").html(gk_items);
+					$(".gk_p").html(gk_price);
+				}
+			});
+		  
+		   $("#fm3").click(function(){
+			   
+			   total_items++;
+			   total_price = total_price +  9.99 ;
+			   jc_items++;
+			   jc_price = jc_price + 9.99;
+			  
+			$(".pnr").html("<p>Vous avez choisit " + total_items+ " prodiuts</p>");
+		   	$(".pnr").append("<p>Votre grand total est " +total_price + " dollars</p>");
+			
+				if(jc_items==1){
+			  			 $("tbody").append("<tr> <td>Jules César ou la gloire de Rome</td> <td>9.99</td><td class='jc_i'>" + jc_items+ "</td> <td class='jc_p'>" + jc_price + " </td> </tr> ");
+							
+		   		} else {
+					$(".jc_i").html(jc_items);
+					$(".jc_p").html(jc_price);
+				}
+			});
+		   
+		   $("#fm4").click(function(){
+			   
+			   total_items++;
+			   total_price = total_price +  29.99 ;
+			   nap_items++;
+			   nap_price = nap_price + 29.99;
+			  
+			$(".pnr").html("<p>Vous avez choisit " + total_items+ " prodiuts</p>");
+		   	$(".pnr").append("<p>Votre grand total est " +total_price + " dollars</p>");
+			
+				if(nap_items==1){
+			  			 $("tbody").append("<tr> <td>Napoléon</td> <td>29.99</td><td class='nap_i'>" + nap_items+ "</td> <td class='nap_p'>" + nap_price + " </td> </tr> ");
+							
+		   		} else {
+					$(".nap_i").html(nap_items);
+					$(".nap_p").html(nap_price);
+				}
+			});
+				
+			$("#fm5").click(function(){
+			   total_items++;
+			   total_price = total_price +  24.99 ;
+			   ht_items++;
+			   ht_price = ht_price + 24.99;
+			   
+			   $(".pnr").html("<p>Vous avez choisit " + total_items+ " prodiuts</p>");
+		   	   $(".pnr").append("<p>Votre grand total est " +total_price + " dollars</p>");
+			   
+			   if(ht_items==1){
+			   			$("tbody").append("<tr> <td>Hitler : Naissance du mal</td> <td>24.99</td> <td class='ht_i'>" + ht_items + "</td> <td  class='ht_p'>" + ht_price + " </td> </tr> "						);
+				} else {
+					$(".ht_i").html(ht_items);
+					$(".ht_p").html(ht_price);
+				}
+			});
+		   
+ 
+	 
+	 // Member  
+	 
+	 var member = false;
+	 
+	  $("#submit").click(function() {
+	
+		var cr = $("#email").val();
+		var ps = $("#motdepasse").val();
+		
+		if ((cr == "utilisateur@gmail.com") && (ps == "987654")) {
+		   $.mobile.navigate("#homePage");
+		   member = true;
+		   $(".ui-icon-user").text("Utilisateur 1");
+		
+		} else if (cr == "utilisateur@gmail.com") {
+		    $(".loginMes1").popup("open");
+			
+		} else if (ps == "987654") {
+		   $(".loginMes2").popup("open");
+			
+		} else {
+		   $(".loginMes3").popup("open");
+		}
+	});
+
+
+	$(".clickGoToCart").click(function() {
+		if (member == false){
+			 $(".panierMessage").popup("open"); 
+			return false;
+			}
+
+	 });
+		
+		$(".myPopup").popup();
+		
+		
+});
+		
+		
+       </script>
+    </body>
+</html>

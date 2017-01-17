@@ -1,0 +1,88 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+body{
+
+	font-family: "Josefin Sans", sans-serif;	
+}
+
+button{
+	font-family: "Josefin Sans", sans-serif;
+}
+
+.dsc{
+	display:inline-block;
+	float:left;
+	width:200px;
+	margin-left:10px;
+}
+
+.ttr_pg{
+	font-size:120%;
+}
+
+.ttr{
+	font-size:110%;
+	color:rgba(252,61,57,0.9);
+	}
+
+.gl_wr{
+	margin:5px;
+	display:inline-block;
+	float:left;
+	width:200px;
+	height:380px;
+	text-align:center;
+	/*background-color:#fff;*/	
+}
+
+.gl{
+	display:inline-block;
+	
+	-webkit-border-radius:  0.3em;
+	border-radius: 0.3em;
+	 overflow:hidden;
+	 -webkit-box-shadow: 0 2px 5px /*{global-box-shadow-size}*/ rgba(0,0,0,.4) /*{global-box-shadow-color}*/;
+	-moz-box-shadow: 0 2px 5px /*{global-box-shadow-size}*/ rgba(0,0,0,.4) /*{global-box-shadow-color}*/;
+	box-shadow: 0 2px 5px /*{global-box-shadow-size}*/ rgba(0,0,0,.4) /*{global-box-shadow-color}*/;
+}
+
+.ac{
+	width:320px;
+	height:213px;
+	margin:5px auto !important;
+	-webkit-border-radius:  0.3em;
+	border-radius: 0.3em;
+	 overflow:hidden;
+	 -webkit-box-shadow: 0 2px 5px /*{global-box-shadow-size}*/ rgba(0,0,0,.4) /*{global-box-shadow-color}*/;
+	-moz-box-shadow: 0 2px 5px /*{global-box-shadow-size}*/ rgba(0,0,0,.4) /*{global-box-shadow-color}*/;
+	box-shadow: 0 2px 5px /*{global-box-shadow-size}*/ rgba(0,0,0,.4) /*{global-box-shadow-color}*/;
+}
+
+.pr{
+	font-size:140%;
+	color:rgba(252,61,57,1);	
+}
+
+.pr_ttr{
+	color:#000;
+}
+
+.s_pht{
+	width:200px;
+	display:inline-block;
+	float:left;
+}
+
+.wr{
+	display:inline-block;
+}
+
+.myPopup{
+	background-color:#fff;
+	padding:10px 15px;
+	font-size:120%;
+}
+
+#panier{
+	font-size:130%;
+}
